@@ -1,4 +1,4 @@
 @import "tailwindcss";
 
-/* Dark mode toggle support ko lagi yo add gara */
+/* Dark mode toggle support ko lagi */
 @variant dark (&:where(.dark, .dark *));
