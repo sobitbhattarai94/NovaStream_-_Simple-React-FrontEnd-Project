@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from "./pages/Home"
 import Services from "./pages/Services"
 import Contact from "./pages/Contact"
+import NotFound from './pages/NotFound'
 function App() {
   return (
     <Router>
@@ -11,6 +12,7 @@ function App() {
         <Route path='/home' element={<Home />} />
         <Route path='/services' element={<Services />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='*' element={<NotFound />} /> {/* mathi ko route bahek sab routes maa yo component dekhauxa */}
       </Routes>
     </Router>
   )
